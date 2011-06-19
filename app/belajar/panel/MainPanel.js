@@ -15,38 +15,23 @@ Ext.define('belajar.panel.MainPanel', {
 					xtype : 'menu',
 					plain : true,
 					items : [ {
-						text : 'Ganti Password'
+						text : 'Ganti Password',
+						scope : this,
+						handler : function(item){
+							Ext.getCmp('centerpanel').displayScreen(item.screenType);
+						},
+						screenType : 'belajar.form.EditPasswordForm'
 					}, {
 						text : 'Logout'
 					} ]
 				}
 			}, {
-				text : 'Master Data',
-				menu : {
-					xtype : 'menu',
-					plain : true,
-					items : [ {
-						text : 'User', 
-						scope : this,
-						handler : function(item){
-							Ext.getCmp('centerpanel').displayScreen(item.screenType);
-						},
-						screenType : 'belajar.form.UserForm'
-					}, {
-						text : 'Role', 
-						scope : this,
-						handler : function(item){
-							Ext.getCmp('centerpanel').displayScreen(item.screenType);
-						},
-						screenType : 'belajar.form.RoleForm'
-					}, {
-						text : 'Permission'
-					} ]
-				}
-			}, {
-				text : 'Transaksi'
-			}, {
-				text : 'Report'
+                                xtype: 'button',
+				text : 'Popup',
+                                handler : function(item){
+                                    Ext.getCmp('centerpanel').displayScreen(item.screenType);
+                                },
+                                screenType : 'belajar.panel.PopupPanel'
 			} ]
 		}, {
 			xtype : 'panel',
@@ -59,7 +44,7 @@ Ext.define('belajar.panel.MainPanel', {
 			region : 'south',
 			height : 20,
 			items : [ {
-				text : 'current user : endy',
+				text : 'current user : ',
 				xtype : 'label'
 			} ]
 		}, {

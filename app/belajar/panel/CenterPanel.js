@@ -10,7 +10,7 @@ Ext.define('belajar.panel.CenterPanel', {
 	     {
 	    	 title : 'Dashboard',
 	    	 bodyPadding : 10,
-	    	 html : 'Selamat Datang di Aplikasi Belajar'
+	    	 html : 'Selamat Datang di Aplikasi Brikercc Agent'
 	     } 
      ], 
 	

@@ -11,6 +11,9 @@ Ext.require([
     'Ext.form.Label',
     'belajar.form.RoleForm',
     'belajar.form.UserForm',
+    'belajar.form.EditPasswordForm',
+    'belajar.model.PopupModel',
+    'belajar.panel.PopupPanel',
     'belajar.panel.CenterPanel',
     'belajar.panel.MainPanel'
 ]);

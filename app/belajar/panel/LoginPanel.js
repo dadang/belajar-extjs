@@ -24,7 +24,7 @@ Ext.define('belajar.panel.LoginPanel', {
             children:[{
                 tag:'img',
                 qtip:'ArtiVisi Intermedia',
-                src:'./resources/img/artivisi.png'
+                src:'./resources/img/logo-brikercc.png'
             }]
         }
     },{
